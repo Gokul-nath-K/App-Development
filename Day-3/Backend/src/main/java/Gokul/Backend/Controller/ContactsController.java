@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
+import Gokul.Backend.Constants.Api;
 import Gokul.Backend.Entity.Contacts;
 import Gokul.Backend.Service.ContactsService;
 import io.swagger.v3.oas.annotations.Operation;
@@ -23,7 +24,7 @@ import io.swagger.v3.oas.annotations.responses.ApiResponse;
 
 
 @RestController
-@RequestMapping("/contacts")
+@RequestMapping(Api.CONTACT)
 public class ContactsController {
 
 	@Autowired

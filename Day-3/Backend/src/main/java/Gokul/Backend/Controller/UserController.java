@@ -7,11 +7,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import Gokul.Backend.Constants.Api;
 import Gokul.Backend.Entity.User;
 import Gokul.Backend.Service.UserService;
 
 @RestController
-@RequestMapping("/user")
+@RequestMapping(Api.USER)
 public class UserController {
 
 	@Autowired
